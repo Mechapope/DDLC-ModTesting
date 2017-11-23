@@ -20,15 +20,34 @@ label test_chapter_1:
     pause 0.25
     stop sound
     hide screen tear
-	
+	#set fucking everyone's name to sayori
+	$ s_name = "Sayori"
+	$ y_name = "Sayori"
+	$ n_name = "Sayori"
+	$ m_name = "Sayori"
 	
     #You will also want to show characters of other images
-    show sayori 1 at t11 zorder 2
+    show sayori 1 at t10 zorder 2
+	show yuri sayori1a at t31 zorder 2
+	show natsuki sayori1a at t32 zorder 2
+	show monika sayori1a at t33 zorder 2
+	
     s "holy shit im dead af"
 	s "im a ghost or something"
 	s "OOOooooooOOOOOOO"
 	
+	y "wtf"
+	
+	n "oh hi mark"
+	
+	m "just sayori"
+	
 	mc "omg"
+	
+	
+	
+	
+	
 
     #Character images are their name followed by a number and letters
     #The trailing letter is generally the facial expression
@@ -48,6 +67,11 @@ label test_chapter_1:
 	
 	"You awaken in a puddle of your own sweat"
 	mc "Wow, I really need to lay off the drugs"
+	
+	#set characters names back
+	$ y_name = "Yuri"
+	$ n_name = "Natsuki"
+	$ m_name = "Monika"
 
     return
 
@@ -62,12 +86,17 @@ label test_chapter_2:
         alpha 0.0
         0.25
         linear 3.0 alpha 1.00
-    m "NORMIES GET OUT\"{space=5000}{w=0.75}{nw}"
-    m 1g "REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE\"{space=5000}{w=1.5}{nw}"
+    s "NORMIES GET OUT\"{space=5000}{w=0.75}{nw}"
+    s 1g "REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE\"{space=5000}{w=1.5}{nw}"
 	
 	window hide(None)
     window auto
     hide black onlayer front
+	
+	scene white
+    with Dissolve(1.0)
+	
+	mc "mom it happened again"
 
     return
 	
@@ -82,5 +111,10 @@ label test_chapter_3:
 	"Monika proceeds to beat the shit out of Sayori"
 	
 	mc "nice"
+	
+	scene white
+    with Dissolve(1.0)
+	
+	mc "wait wtf happens to a ghost when they die"
 	
 	return
