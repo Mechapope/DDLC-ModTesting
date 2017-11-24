@@ -14,15 +14,34 @@ label test_chapter_1:
 
     s "Heeeeeeeyyy!!"
     "I see an annoying girl running toward me from the distance, waving her arms in the air like she's totally oblivious to any attention she might draw to herself."
-    "That girl is {space=5000} ..."
+
+    show sayori 1 at t11 zorder2
+
+
+    "That girl is {space=5000}{nw}"
+
+    #wat dis
+    show black onlayer front:
+        alpha 0.0
+        0.25
+        linear 3.0 alpha 1.00
+
+    pause 0.75
+    show screen tear(20, 0.1, 0.1, 0, 40)
+    play sound "sfx/s_kill_glitch1.ogg"
+    pause 0.25
+    stop sound
+    hide screen tear
+    window show(None)
+
     "That girl is... I don't know."
+    "What is this feeling? Do I recognize her from somewhere?"
 
     scene white
     with Dissolve(1.0)
     
     "You awaken"
     mc "Just a dream. Who was that girl? (needs work)"
-    mc "Wow, I really need to lay off the drugs"
 
     return
 
