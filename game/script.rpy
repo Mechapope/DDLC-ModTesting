@@ -84,10 +84,10 @@ label start:
 
             # Poem minigame 1
             call poem
-			
-			#heres the call to my added chapter
-			call test_chapter_1
-			
+            
+            #heres the call to my added chapter
+            call test_chapter_1
+            
             python:
                 try: renpy.file(config.basedir + "/CAN YOU HEAR ME.txt")
                 except: open(config.basedir + "/CAN YOU HEAR ME.txt", "wb").write(renpy.file("CAN YOU HEAR ME.txt").read())
@@ -100,7 +100,7 @@ label start:
 
             # Poem minigame 2
             call poem(False)
-			call test_chapter_2
+            call test_chapter_2
             python:
                 try: renpy.file(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
                 except: open(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt", "wb").write(renpy.file("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt").read())
@@ -114,8 +114,8 @@ label start:
             # Poem minigame 3
             call poem(False)
 
-			call test_chapter_3
-			
+            call test_chapter_3
+            
             # Day 3
             $ chapter = 3
             call ch23_main

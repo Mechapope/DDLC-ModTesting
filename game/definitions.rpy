@@ -1296,15 +1296,15 @@ image monika g2:
             pause 0.2
     repeat
 
-	
+    
 #here are images for when everyone turns into sayori during nightmare
 image yuri sayori1a = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
 image natsuki sayori1a  = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
 image monika sayori1a = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
-	
-	
-	
-	
+    
+    
+    
+    
 ###### Character Variables ######
 # These configure the shortcuts for writing dialog for each character.
 define narrator = Character(ctc="ctc", ctc_position="fixed")

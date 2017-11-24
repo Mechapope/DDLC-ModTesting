@@ -4,117 +4,65 @@
 #Each section needs a label, this is how we will call the scene in or parts of the script
 label test_chapter_1:
     stop music fadeout 2.0
-	$ s_name = glitchtext(10)
 
     #This set's up the scene with a background and music
     #scene bg club_day
     #with dissolve_scene_full
     #play music t3
 
-    # Most of the story will be told using "Say" statements
-    # They take the form of a short nickname, follow by their statement in quotes.
-    s "[player]..."
+    $ s_name = "???"
 
-	show screen tear(20, 0.1, 0.1, 0, 40)
-    play sound "sfx/s_kill_glitch1.ogg"
-    pause 0.25
-    stop sound
-    hide screen tear
-	#set fucking everyone's name to sayori
-	$ s_name = "Sayori"
-	$ y_name = "Sayori"
-	$ n_name = "Sayori"
-	$ m_name = "Sayori"
-	
-    #You will also want to show characters of other images
-    show sayori 1 at t10 zorder 2
-	show yuri sayori1a at t31 zorder 2
-	show natsuki sayori1a at t32 zorder 2
-	show monika sayori1a at t33 zorder 2
-	
-    s "holy shit im dead af"
-	s "im a ghost or something"
-	s "OOOooooooOOOOOOO"
-	
-	y "wtf"
-	
-	n "oh hi mark"
-	
-	m "just sayori"
-	
-	mc "omg"
-	
-	
-	
-	
-	
-
-    #Character images are their name followed by a number and letters
-    #The trailing letter is generally the facial expression
-
-    #The number is the pose
-
-    #Faces and poses can be changed inline if you are not changing positions of the character(s).
-    #For face reference, view the image files of the character you are trying to manipulate,
-    #and choose the face image letter that most accurately displays the emotion you are trying to convey.
-
-    #Refer to the Character Pose Cheat Sheet(This doesn't exist yet!) to find out which number corresponds to which pose!
-
-    
+    s "Heeeeeeeyyy!!"
+    "I see an annoying girl running toward me from the distance, waving her arms in the air like she's totally oblivious to any attention she might draw to herself."
+    "That girl is {space=5000} ..."
+    "That girl is... I don't know."
 
     scene white
     with Dissolve(1.0)
-	
-	"You awaken in a puddle of your own sweat"
-	mc "Wow, I really need to lay off the drugs"
-	
-	#set characters names back
-	$ y_name = "Yuri"
-	$ n_name = "Natsuki"
-	$ m_name = "Monika"
+    
+    "You awaken"
+    mc "Just a dream. Who was that girl? (needs work)"
+    mc "Wow, I really need to lay off the drugs"
 
     return
 
 label test_chapter_2:
-	stop music fadeout 2.0
-	
-	#TODO transparent
-	show sayori 1 at t11 zorder 2
-	s "You don't stand... a GHOST of a chance xD"
-	stop music fadeout 3.0
+    stop music fadeout 2.0
+    
+    #TODO transparent
+    show sayori 1 at t11 zorder 2
+    s "You don't stand... a GHOST of a chance xD"
+    stop music fadeout 3.0
     show black onlayer front:
         alpha 0.0
         0.25
         linear 3.0 alpha 1.00
     s "NORMIES GET OUT\"{space=5000}{w=0.75}{nw}"
     s 1g "REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE\"{space=5000}{w=1.5}{nw}"
-	
-	window hide(None)
+    
+    window hide(None)
     window auto
     hide black onlayer front
-	
-	scene white
+    
+    scene white
     with Dissolve(1.0)
-	
-	mc "mom it happened again"
+    
+    mc "mom it happened again"
 
     return
-	
+    
 label test_chapter_3:
 
-	show sayori 1 at t11 zorder 2
-	s "so like, do you want to catch a movie later or something?"
-	
-	show monika 2 at t12 zorder 20
-	m "rejected!"
-	
-	"Monika proceeds to beat the shit out of Sayori"
-	
-	mc "nice"
-	
-	scene white
+    s "Heeeeeeeyyy!!"
+    "I see a pretty girl waving at me from the distance, smiling sweetly something descriptive that actually fits."
+    "That girl is Monika, my neighbor and good friend since we were children."
+    "You know, the kind of friend you'd never see yourself making today because they're so far out of your league, but it just kind of works out because you've known each other for so long?"
+    show monika 4p at t11 zorder 2
+
+    scene white
     with Dissolve(1.0)
-	
-	mc "wait wtf happens to a ghost when they die"
-	
-	return
+    
+    "You awaken"
+    mc "I have nothing interesting to say"
+    
+    return
