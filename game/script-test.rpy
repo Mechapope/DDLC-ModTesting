@@ -3,12 +3,13 @@
 
 #Each section needs a label, this is how we will call the scene in or parts of the script
 label test_chapter_1:
-    stop music fadeout 2.0
 
     #This set's up the scene with a background and music
-    #scene bg club_day
-    #with dissolve_scene_full
-    #play music t3
+    stop music fadeout 2.0
+    scene bg residential_day
+    show noise at noise_alpha zorder 100
+    with dissolve_scene_full
+    play music t2
 
     $ s_name = "???"
 
@@ -43,10 +44,18 @@ label test_chapter_1:
     "You awaken"
     mc "Just a dream. Who was that girl? (needs work)"
 
+    hide noise
+
     return
 
 label test_chapter_2:
+
+    #This set's up the scene with a background and music
     stop music fadeout 2.0
+    scene bg residential_day
+    show noise at noise_alpha zorder 100
+    with dissolve_scene_full
+    play music t2
     
     #TODO transparent
     show sayori 1 at t11 zorder 2
@@ -71,6 +80,13 @@ label test_chapter_2:
     return
     
 label test_chapter_3:
+
+    #This set's up the scene with a background and music
+    stop music fadeout 2.0
+    scene bg residential_day
+    show noise at noise_alpha zorder 100
+    with dissolve_scene_full
+    play music t2
 
     s "Heeeeeeeyyy!!"
     "I see a pretty girl waving at me from the distance, smiling sweetly something descriptive that actually fits."
